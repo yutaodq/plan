@@ -1,0 +1,21 @@
+{
+    "name": "Java, RabbitMQ and Gradle",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "rabbitmq",
+    // "workspaceMount": "source=../,target=/workspace/plan,type=bind,consistency=cached",
+
+    "workspaceFolder": "/workspace/plan",
+    "extensions": [
+        "vscjava.vscode-java-pack",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "Alibaba-Cloud.tongyi-lingma",
+        "GitHub.github-vscode-theme",
+        "ms-azuretools.vscode-docker"
+    ],
+    "forwardPorts": [
+        "rabbitmq:5672",
+        "rabbitmq:15672",
+        "rabbitmq:15674"
+    ]
+}
