@@ -34,7 +34,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "zy6.sysc.plan.app.App"
+    mainClass = "zy6.sysc.plan.domain.App"
 }
 
 tasks.named<Test>("test") {
