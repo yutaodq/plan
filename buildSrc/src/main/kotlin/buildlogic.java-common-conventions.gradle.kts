@@ -8,8 +8,15 @@ plugins {
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
-    mavenCentral()
+    mavenLocal() // 首先尝试本地Maven仓库
+    maven {
+        url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+        url = uri("https://maven.aliyun.com/repository/public/")
+
+    }
+
+    mavenCentral() // 最后是Maven中央仓库
+
 }
 
 dependencies {

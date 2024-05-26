@@ -11,4 +11,4 @@ plugins {
 }
 
 rootProject.name = "plan"
-include("app")
+include("domain")
